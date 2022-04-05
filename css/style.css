@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'alfa';
+    src: url('../font/SmoochSans.ttf');
+  }
+  
+  @font-face {
+    font-family: 'destaque';
+    src: url('../font/JosefinSans.ttf');
+  }
+  
+  
+  :root {
+    --cor0: #ffffff;
+    --cor1: black;
+    --cor2: #434e39d7;
+    --cor3: #2a4247d2;
+    --cor4: #F58634;
+    --cor5: rgba(58, 58, 58, 0.808);
+    --cor6:#3C3C3B;
+    --cor7:#0078FF;
+      
+    --fonte-texto: 'Arial' verdana helvetica;
+    --fonte-destaque: 'destaque' Arial sans-serif;
+    --fonte-header: 'alfa' Arial sans-serif;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--cor6);
+}
+main {
+   max-width: 90%;
+    background-color:var(--cor0);
+    margin: 0 auto;
+
+}
+
+/* Navegaçao*/
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor7);
+    margin-bottom:35px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: var(--cor0);
+    font-weight: bold;
+    font-size: 32px;
+    font-family: 'arial', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+
+}
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color:var(--cor0);
+}
+
+/* Cabeçalho*/
+
+header {
+    background-color: var(--cor0);
+    background-size: cover;/*
+    background-repeat: no-repeat;
+    background-position: center;*/
+    color: var(--cor5);
+    text-align: center;
+    padding-bottom: 90px;
+    max-width:70%;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-bottom:35px;
+    color: var(--cor1);
+}
+
+/* Fotos*/
+
+#fotos {
+    display: flex;
+    flex-direction: ;
+    align-items: center;
+    padding-top: 0;
+    padding:0;
+    margin: 0;
+}
+
+#fotos h2 {
+    margin-bottom: 20px;
+}
+
+#fotos img {
+    width: 45%;
+}/*
+#img1 {
+    width: 45%;
+   text-align: left;
+}
+#img2 {
+    width: 35%;
+    display: inline-block;
+}
+#img3 {
+    width: 35%;
+}
+
+/* Imagens da div*/
+
+#imagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#imagens div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+/* Responsividade aqui*/
+
+@media screen and (min-width: 768px) {
+    /*nav*/
+    nav {
+        flex-direction:row;
+        justify-content: space-around;
+    }
+    nav ul {
+        flex-direction:row;
+        width: 70%;
+    }
+    
+    /* Cabeçalho 
+    header {
+        height: 600px;
+        height:60vh;
+        justify-content: center;
+    }*/
+    
+    /* Sobre*/
+    #sobre {
+        height: 250px;
+        height:30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+    /* Serviços */
+    #imagens {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin:0 auto;
+    }
+    #imagens h2 {
+        text-align: center;
+        width: 100%;
+    }
+    #imagens div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+    
+    /* Fotos */
+    #fotos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #fotos h2 {
+        width: 100%;
+        text-align: center;
+    }
+    #fotos img {
+        width: 33.3333333% ;
+    }
+    
+    /* Contato */
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    #contato h2, #contato p {
+        width: 100%;
+        
+    }
+    }
