@@ -18,7 +18,7 @@
     --cor3: #2a4247d2;
     --cor4: #F58634;
     --cor5: rgba(58, 58, 58, 0.808);
-    --cor6:#3C3C3B;
+    --cor6:#2E4144;
     --cor7:#0078FF;
       
     --fonte-texto: 'Arial' verdana helvetica;
@@ -29,6 +29,8 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -38,182 +40,480 @@ main {
    max-width: 90%;
     background-color:var(--cor0);
     margin: 0 auto;
-
+   
 }
-
-/* Navegaçao*/
-
-nav {
+/*==========alinhamento com flex box==========*/
+.center {/*============header cabeçalho==========*/
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0  2%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--cor7);
-    margin-bottom:35px;
-}
-
-nav > a {
-    text-decoration: none;
-    color: var(--cor0);
-    font-weight: bold;
-    font-size: 32px;
-    font-family: 'arial', sans-serif;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    width: 100%;
-}
-
-nav ul li {
-    text-align: center;
-    width: 100%;
+    flex-wrap: wrap;/* pra centralizar a div junto com main cta de width:100%;*/
 
 }
-nav ul li a {
-    display: inline-block;
-    padding: 10px 0;
-    width: 100%;
-    text-decoration: none;
-    color:var(--cor0);
+
+.menu-mobile {
+    display:none;
 }
-
-/* Cabeçalho*/
-
 header {
     background-color: var(--cor0);
-    background-size: cover;/*
-    background-repeat: no-repeat;
-    background-position: center;*/
-    color: var(--cor5);
-    text-align: center;
-    padding-bottom: 90px;
-    max-width:70%;
-    margin: 0 auto;
-    border: 1px solid black;
-    margin-bottom:35px;
+    padding: 20px 0;
+    border-bottom:2px solid black;
+}
+
+.logo {
+    color: var(--cor4);
+}
+.logo h2{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.menu{/*==============menu==========*/
+    text-align: right;
+    width: 80%;
+}
+.menu a {
     color: var(--cor1);
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 20px;
 }
-
-/* Fotos*/
-
-#fotos {
-    display: flex;
-    flex-direction: ;
-    align-items: center;
-    padding-top: 0;
-    padding:0;
-    margin: 0;
+.menu a:hover {
+    color: var(--cor4);
+    text-decoration: underline;
+    
 }
-
-#fotos h2 {
-    margin-bottom: 20px;
+.menu .btn-menu:hover {
+    color: var(--cor4);
+    font-weight: bolder;
+    background-color: var(--cor3);
 }
-
-#fotos img {
-    width: 45%;
-}/*
-#img1 {
-    width: 45%;
-   text-align: left;
-}
-#img2 {
-    width: 35%;
+.menu .btn-menu {
+    background-color: var(--cor4);
+    color: var(--cor0);
     display: inline-block;
-}
-#img3 {
-    width: 35%;
-}
-
-/* Imagens da div*/
-
-#imagens {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: bolder;
+    transition-duration: 0.5s;
 }
 
-#imagens div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/*=========section main=============*/
+
+section.main {
+   background-color: var(--cor3);/*
+   background-image: url(../img/AlfaNerd.png);*/
+  /* min-height: 800px; se usa pra definir tamanho da area*/
+  padding: 70px 0;
+   background-position:center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+.main_cta {
+    width:100%;
+    margin:60px;
     text-align: center;
-    margin-top: 30px;
+}
+
+.main_cta h2 {
+    color:var(--cor4);
+    font-size: 40px;
+}
+.main_cta p {
+    color: var(--cor0);
+    font-size: 19px;
+    margin:10px 0;
+}
+.main_cta button {
+    background-color: var(--cor4);
+    color: var(--cor0);
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    border: 0;
+    cursor: pointer;
+}
+
+.diferenciais {
+    display: flex;/*usamos pra colocar uma do lado da outra nas divs*/
+    flex-wrap: wrap;
+}
+.diferencial-single {
+    background-color: var(--cor0);
+    /*width: calc(100% / 4);  se usa pra calcular a divisao da div */
+    width: 23%;
+    margin-right:  2%;
+    padding:50px 20px;
+    border-radius: 6px;
+}
+
+.diferencial-single i {/*svg font Awesome*/
+    color: var(--cor4);
+    font-size: 25px;
+}
+.diferencial-single h2 {
+    color: var(--cor4);
+    text-shadow: 1px 2px 2px 0px;
+    margin:10px 0;
+    font-size:18px;
+}
+.diferencial-single p {
+    color: var(--cor3);
+    font-size:14px;
+    line-height: 25px;/*distanciamento do texto de baixo*/
+}
+/*======section Sobre======*/
+section.sobre {
+    padding: 60px 0;
+    background-color: var(--cor0);
+}
+.chamada-sobre {
+    width:100%;
+    text-align: center;
+    text-transform: uppercase; /*coloca o que ta em minusculo maiusculo*/
+}
+.chamada-sobre h2 {
+    color: var(--cor4);
+    padding-bottom:10px;
+}
+.chamada-sobre p {
+    font-size: 14px;
+    color: var(--cor3);
+    margin:10px 0;
+}
+.conteudo-sobre{
+    display:flex;/*coloca dentro de uma div do lado da outra*/
+    font-size: 14px;
+    color: var(--cor3);
+    flex-wrap: wrap;
+}
+.conteudo-sobre p {
+    width: 48%;
+    margin-right: 2%;
+}
+.conteudo-sobre span {
+    display: inline-block;
+    width: 100%;
+    margin-top:10px;
+}
+.conteudo-sobre i {
+    color: var(--cor4);
+    font-size:15px;
+}
+.conteudo-sobre .botao {
+    background-color: var(--cor4);
+    color: var(--cor0);
+    padding: 5px;
+    border:0;
+    border-radius: 6px;
+}
+section.conquistas {
+    background-color: var(--cor0);
+    padding:20px 0;
+}
+.conquista-single {
+    width:22%;
+    margin-right:3%;
+    text-align: center;
+    color: var(--cor3);
+}
+.conquista-single h2 {
+    color: var(--cor4);
+    font-size:30px;
+}
+section.imagens-lado-a-lado {/* seçao de conquistas colocando imagens*/
+    background-color: var(--cor0);
+    padding:20px 0;
+    width: 54%;/*dimenciona a div ou seçao na tela*/
+    margin:0 auto;/* alinha conteudo ao centro*/
+    margin-bottom:10px;
+}
+.imagens-single img {/* seçao de conquistas colocando imagens*/
+    max-width: 100%;
+    filter: grayscale(100%);/*se usa para tornar preto e branco ou cinza escuro*/
+    transform: scale(1,1);/*usado para zoom em imagem ou texto*/
+    transition: 1s;/*asnimaçao de transiçao suave*/
+}
+.imagens-single img:hover {/*se usa hover para interaçao animada*/
+    filter: grayscale(0%);
+    transform: scale(2,2);
+}
+
+.imagens-single {
+    width:22%;
+    margin-right:3%;
+    text-align: center;
+    color: var(--cor3);
+}
+.imagens-single h2 {
+    color: var(--cor4);
+    font-size:30px;
+}
+section.outra-secao {/*aqui começa uma secao com foto lateral e descriçao ao lado*/
+    padding:40px 0;
+}
+.outra-secao {
+display: flex;
+
+}
+.outra-secao-conteudo-img {
+    width: 50%;/*tamanho dimencionado responsivo na imagem deve ser colocado junto com metodo responsivo de 100%*/
+}
+.outra-secao-conteudo-img img{max-width:100%;}/*metodo responsivo para colocar imagem*/
+.outra-secao-conteudo {
+    width: 50%;
+    padding: 0 50px;
+}
+.outra-secao-conteudo h2 {
+    color: var(--cor4);
+    margin-bottom:10px;
+}
+.outra-secao p {
+    line-height: 25px;
+}
+#titulocelular  {/*colocando titulo a amostra quando diminue e some quando aumenta*/
+    display: none;/*deixa oculto*/
+    color: var(--cor4);
+    margin-bottom:10px;
+}
+.outra-secao-conteudo p {
+    color: var(--cor0);
+    margin-bottom:14px;
+}
+
+.menu-itens {/*menu mobile hamburguin*/
+    position: absolute;
+    left:0px;
+    top:72px;
+    width:100%;
+    text-align: center;
+    padding-right: 2px;
+    background-color: var(--cor4);
+    /*border-bottom:2px solid black;*/
+    display: block;
+    opacity: 0;
+    transition: 1s;
+}
+.menu-itens.show {
+    opacity:1;
+    
+}
+.menu-itens.hide {
+    opacity:0;
+    
+}
+.menu-itens a {
+    display: block;
+    text-decoration: none;
+    color: var(--cor0);
+    font-weight:bold;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+.menu-itens a:hover {
+   /* text-decoration: underline;*/
+   color: var(--cor6);
+    margin: 0px;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+/*=========CARROSEL DE DEPOIMENTOS=================*/
+    section.depoimentos {
+    padding: 40px 0;
+    margin: 0 auto;/*margin centralizada*/
+}
+.depoimentos-chamada {
+    text-align: center;
+    text-transform: uppercase;/*coloca o texto em maiusculo indepedente se estiver minusculo*/
+    font-size: 14px;  
+    margin: 0 auto;/*margin centralizada*/
+}
+.depoimentos-chamada h2 {
+    color: var(--cor4);
+    text-align: center;
+}
+.depoimentos-chamada p {
+    color: var(--cor0);
+    margin:10px 0;
+}
+.carrousel {
+    display: flex;    
+    margin: 0 auto;/*margin centralizada*/
+}
+.carrousel-single {
+    width: 35%;
+    margin-right: 2%;
+    text-align: center;
+}
+.carrousel-single span {
+    color: var(--cor2);
+}
+.carrousel-single p {
+    color: var(--cor1);
+    padding-bottom:5px;
+}
+.carrousel-single img {
+    width: 50px;
+    height:50px;
+    display: inline-block;/* deixa o conteudo sob controle movel no bloco*/
+    margin: 10px 0;/* se usa para alinhar*/
+    border-radius: 50%;
+}
+.carrousel-single-box {
+    padding:10px;
+    background-color:var(--cor0) ;
+    margin-bottom:10px;
+    border-radius: 10px;
+}
+.carrousel-single-box p {
+    font-style: italic;
+    font-size: 12px;
+}
+.carrousel-single-box i {
+    color: var(--cor4);
+    font-size:16px;
+    padding: 0 8px;/*==============FIM CARROSEL DEPOIMENTOS===========*/
+}
+/*====================CARROSEL DE FOTOS================*/
+article.artigo-carrosel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;/*
+    min-height: 100vh;*/
+    box-sizing: border-box;
+    background-color: var(--cor0);
+    height:200px;
+    width: 600px;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.carrosel-fotos {
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height:200px;
+    width: 600px;
+    display:inline-flex
     
 }
 
-/* Responsividade aqui*/
+.container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transition: translateX(0);
+}
+.container img {
+    object-fit: cover;
+    height: 200px;
+    width: 600px;
+}/*=====================FIM DO CARROSEL=========*/
 
-@media screen and (min-width: 768px) {
-    /*nav*/
-    nav {
-        flex-direction:row;
-        justify-content: space-around;
+footer {/*configuraçao rodape*/
+    background-color: var(--cor6);
+    padding-top:10px;
+    padding-bottom:15px;
+    border-top: 2px solid white;
+    text-align: center;
+    color: var(--cor0);
+}
+footer h1 {
+    color: var(--cor4);
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+}
+footer p {
+    font-size: 12px;
+}
+#link-rodape a{
+    color: var(--cor4);
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    text-decoration: none;
+    text-align: right;
+}
+#link-rodape {
+    font-family: var(--fonte-padrao);
+    font-weight: normal;
+    text-decoration: none;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+/*media query se usa para tornar responsivo usando as classes dimencionando o tamanho da tela*/
+@media screen and (max-width: 400px){/*menor que 400px*/
+    .menu-itens {
+        top:75px;
     }
-    nav ul {
-        flex-direction:row;
-        width: 70%;
+    section.conquistas h2 {
+        font-size: 1em;
+    }
+    .logo h2 {
+        font-size:1em;
+    }
+    .main h2  {
+        font-size:1.3em;
+    }
+    .main p{
+        font-size:0.9em;
     }
     
-    /* Cabeçalho 
-    header {
-        height: 600px;
-        height:60vh;
-        justify-content: center;
-    }*/
-    
-    /* Sobre*/
-    #sobre {
-        height: 250px;
-        height:30vh;
-        justify-content: center;
-        min-height: 250px;
+}
+@media screen and (max-width: 768px) {/*menor que 768px*/
+    .diferencial-single{
+        width:100%;
+        margin-bottom:10px;
     }
-    /* Serviços */
-    #imagens {
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        max-width: 1000px;
+    .logo {
+        width:25%;
+    }
+    .menu {
+        display: none;
+    }
+    .menu-mobile {
+        width:75%;
+        text-align: right;
+        display:block;
+    }
+    .conteudo-sobre p {
+        width:100%;
+        margin-bottom:20px;
+    }
+    .menu-mobile i {
+        cursor: pointer;
+        font-size:23px;
+        margin-top:8px;
+    }
+   .outra-secao-conteudo-img {
+        width: 100%;/*tamanho dimencionado responsivo na imagem deve ser colocado junto com metodo responsivo de 100%*/
+    }
+    .outra-secao-conteudo {
+        width: 100%;
+        padding: 0 30px;
+    }
+    .outra-secao-conteudo h2 {/*colocando titulo oculto quando diminue*/
+        display:none;
+    }
+    .outra-secao-conteudo p {
+        padding-top: 10px;
+        line-height: 25px;
+    }
+    #titulocelular  {/*colocando titulo a amostra quando diminue*/
+        display: inline;
+        color: var(--cor4);
+        margin-bottom:10px;
+    }
+    section.imagens-lado-a-lado {/* seçao de conquistas colocando imagens*/
+        background-color: var(--cor0);
+        padding:20px 0;
+        width: 100%;
         margin:0 auto;
     }
-    #imagens h2 {
-        text-align: center;
-        width: 100%;
+    article.artigo-carrosel {/*carrosel de fotos some ao diminuir tela*/
+        display: none;
     }
-    #imagens div {
-        flex-grow: 1;
-        flex-basis: 150px;
-        padding: 0 10px;
-    }
-    
-    /* Fotos */
-    #fotos {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    #fotos h2 {
-        width: 100%;
-        text-align: center;
-    }
-    #fotos img {
-        width: 33.3333333% ;
-    }
-    
-    /* Contato */
-    #contato {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        max-width: 500px;
-        margin: 0 auto;
-    }
-    #contato h2, #contato p {
-        width: 100%;
-        
-    }
-    }
+}
