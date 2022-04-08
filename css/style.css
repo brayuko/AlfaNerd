@@ -58,7 +58,11 @@ main {
 header {
     background-color: var(--cor0);
     padding: 20px 0;
-    border-bottom:2px solid black;
+    border-bottom:2px solid black;    
+    position: sticky;/*======SE USA PARA MENU SEGUINDO*/
+    left: 0;
+    top: 0;
+    z-index: 99;
 }
 
 .logo {
@@ -102,9 +106,9 @@ header {
 /*=========section main=============*/
 
 section.main {
-   background-color: var(--cor3);/*
-   background-image: url(../img/AlfaNerd.png);*/
-  /* min-height: 800px; se usa pra definir tamanho da area*/
+  /* background-color: var(--cor3);*/
+   background-image: url(../img/AlfaNerd.png);
+   min-height: 800px; se usa pra definir tamanho da area
   padding: 70px 0;
    background-position:center;
    background-size: cover;
