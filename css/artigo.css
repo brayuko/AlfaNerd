@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/*======================imagem mosaico=====================*/
+.mosaico{
+    display: flex;
+}
+#img-mosaico {
+    padding-right: 5px;
+}
+#img-mosaico-ultima {
+    display: inline;
+}
+/*=======FIM IMAGEM MOSAICO==========*/
+/*=====================SEÇAO ARTIGOS==========*/
+div.quadrado {/*===================conteudo do site div artigos=========================*/
+    display:inline-block ;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: lightgrey;
+    width:300px;
+    height:300px;
+    overflow:auto;
+    
+ } 
+ article.artigopost {/*ALINHAR ARTIGO AO SITE*/
+    display: inline-block;
+    margin:0 auto;/*=======continuar aqui onde parei=====*/
+    width: 100%;
+    background-color: var(--cor0);
+ }
+ 
+ div#q1 {
+  background-image: url('./img/nick10.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+   float: left;
+ }
+ 
+ div#q2 {
+  background-image: url('./img/the-boys.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+   /* background-image: linear-gradient(to bottom, yellow,red);*/
+   float: left;
+ }
+ 
+ div#q3 {
+    background-image: url('./img/sonic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    float: left;
+ }
+ div#q4 {
+   background-image: url('./img/dragon-ball-filme-adiado.jpg') ;
+   background-repeat: no-repeat;
+   background-size:cover ;
+   background-position: center;
+   float: left;
+ }
+ 
+ div#q5 {
+   background-image: url('./img/kof.jpg') ;
+   background-repeat: no-repeat;
+   background-size:cover ;
+   background-position: center;
+   float: left;
+ }
+ 
+ div#q6 {
+   background-image: url('./img/morbius.jpeg') ;
+   background-repeat: no-repeat;
+   background-size:cover ;
+   background-position: right center;
+   float: left;
+ } 
+ .linkimagem {
+   padding-left: 10px;
+ }
+ .artigo-h1 {
+   color: var(--cor0);
+   background-color: rgba(0, 0, 0, 0.548);
+   font-size: min(1.2em, 3.9vw);
+   text-align: center;
+   padding-bottom: 5px;
+   margin-right: 0px;
+ }
+ #artigo-p {
+   color: var(--cor6);
+ }
+ #dbz {
+   color: var(--cor4);
+   font-weight: bolder;
+   font-size:  min(1.2em, 3.9vw);
+   text-shadow: 2px 2px 0px var(--cor6);
+   border-bottom: 1px solid white;
+   text-align: left;
+   font-family: var(--fonte-texto);
+   background-color: rgba(0, 0, 0, 0.548);
+   margin: 0px;
+   padding: 0px;
+ 
+ }
+ .dbz {
+   width: 100%;
+ }
+ .imgartigo {
+ 
+ }
+ .post {
+   width: 400px;
+   border: 2px solid;
+   
+ }
+ .postimg1 {
+   border: 5px solid orange;
+   position: relative;
+   display: contents;
+   margin: 0;
+   padding:0;
+ }
+ .postimg2 {
+   border: 1px solid;
+   display: contents;
+   margin: 0;
+   padding: 0;
+ }/*========================================div fim========================================*/

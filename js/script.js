@@ -1,3 +1,4 @@
+/*menu hamburguin*/
 var el = document.querySelector('.menu-mobile-icon');
         el.addEventListener('click', ()=>{/*menu hamburguin */
              /* alert('clicado'); comando abaixo serve para mostrar o menu*/

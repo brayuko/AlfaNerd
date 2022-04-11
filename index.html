@@ -12,6 +12,7 @@
     <link href="https: //fonts.googleapis.com/css2? família= Poppins:wght@100;300;600 & display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/grid-mosaico.css">
 
 </head>
 <body>
@@ -23,7 +24,7 @@
                 </div><!--logo-->
                 <div class="menu">
                     <a href="#">Inicio</a>
-                    <a href="#">Artigos</a>
+                    <a href="artigos.html">Artigos</a>
                     <a href="#">Sobre Nos</a>
                     <a href="#">Contato</a>
                     <a class="btn-menu" href="#">Click Aqui</a>
@@ -32,7 +33,7 @@
                     <i class="fas fa-bars menu-mobile-icon" ></i>
                     <div class="menu-itens">
                         <a href="#">inicio</a>
-                        <a href="#">Artigos</a>
+                        <a href="artigos.html">Artigos</a>
                         <a href="#">Sobre Nos</a>
                         <a href="#">contato</a>
                     </div><!--menu-itens-->
@@ -40,15 +41,31 @@
         </div><!--center-->
     </header>
 
+    
   <section class="main">
     <div class="center">
+        <!--======INICIO GALERIA=====-->
+    
+        <div class="mosaico-grid">
+            <div class="child" id="child1" >
+                <img src="./img/IMAGEM-MOSAICO-350X400PX/BILLY-BRUTO-350X400PX.png" id="foto1" alt=""> <p>Legenda</p>
+            </div><!--Child Div Filho-->
+            <div class="child" id="child1" >
+                <img src="./img/IMAGEM-MOSAICO-450X200PX/IMAGEM-MOSAICO2-450X200PX.png" id="foto1" alt=""><p>Legenda</p></div><!--Child Div Filho-->
+            <div class="child" id="child1" >
+                <img src="./img/IMAGEM-MOSAICO-450X200PX/IMAGEM-MOSAICO3-450X200PX.png" id="foto1" alt=""><p>Legenda</p>
+            </div><!--Child Div Filho-->
+        
+        </div><!--mosaico-grid Div Pai-->
+    
+<!--======================FIM DA GALERIA-->
         <div class="main_cta">
             <h2>O que ha de Melhor pra voce</h2>
             <p> Seja Bem-Vindo Ao Alfa Nerd</p>
             <button>Click Aqui</button>
         </div><!--main_cta-->
-        <div class="diferenciais">
 
+        <div class="diferenciais">
             <div class="diferencial-single">
                 <i class="fas fa-anchor"></i><!--pode usar i tag pra icone ou colocar imagem com img-->
                 <h2>icone numero 1</h2>
@@ -56,19 +73,19 @@
             </div><!--diferencial-single-->
 
             <div class="diferencial-single">
-                <img src="./img/p3.png" alt="icone">
+                <img src="./img/icone/p3.png" alt="icone">
                 <h2>icone numero 1</h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ullam hic nam quod officia. Ut odit quos sit. Sint quae iusto ab magnam ullam culpa commodi consectetur non inventore fuga? </p>
             </div><!--diferencial-single-->
 
             <div class="diferencial-single">
-                <img src="./img/p1.png" alt="icone">
+                <img src="./img/icone/p1.png" alt="icone">
                 <h2>icone numero 1</h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ullam hic nam quod officia. Ut odit quos sit. Sint quae iusto ab magnam ullam culpa commodi consectetur non inventore fuga? </p>
             </div><!--diferencial-single-->
 
             <div class="diferencial-single">
-                <img src="./img/p2.png" alt="icone">
+                <img src="./img/icone/p2.png" alt="icone">
                 <h2>icone numero 1</h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ullam hic nam quod officia. Ut odit quos sit. Sint quae iusto ab magnam ullam culpa commodi consectetur non inventore fuga? </p>
             </div><!--diferencial-single-->
@@ -125,7 +142,7 @@
   <section class="outra-secao" >
     <div class="center">
         <h2 id="titulocelular">Espetacular Homem-Aranha 3 com Endrow Garfield?</h2>
-        <img class="outra-secao-conteudo-img"  src="../img/morbius1.jpg" alt="imagem morbius">
+        <img class="outra-secao-conteudo-img"  src=".\img\IMAGEM-DESTAQUE 800X400PX\morbius-350X400PX.png" alt="imagem morbius">
         <div class="outra-secao-conteudo">
             <h2>Espetacular Homem-Aranha 3 com Endrow Garfield?</h2>
             <p>Rumores surgem com a cena pos Credito de Morbius<br>
@@ -137,19 +154,19 @@
   <section class="imagens-lado-a-lado"><!-- seçao com imagens lado a lado-->
     <div class="center">
         <div class="imagens-single">
-           <img src="../img/facebook.png" width="35px"  alt=""><!--usei width="35px" pra dimencionar a imagem forçando um tamanho menor, o ideal e dimencionar ela no tamanho certo via editor de fotos-->
+           <img src="./img/REDES-SOCIAIS/facebook.png" width="35px"  alt=""><!--usei width="35px" pra dimencionar a imagem forçando um tamanho menor, o ideal e dimencionar ela no tamanho certo via editor de fotos-->
         </div><!--conquista-single-->
 
         <div class="imagens-single">
-            <img src="../img/mail.png" alt="">
+            <img src="./img/ICONE/mail.png" alt="">
         </div><!--conquista-single-->
 
         <div class="imagens-single">
-            <img src="../img/mail.png" alt="">
+            <img src="./img/ICONE/mail.png" alt="">
         </div><!--conquista-single-->
 
         <div class="imagens-single">
-            <img src="../img/mail.png" alt="">
+            <img src="./img/ICONE/mail.png" alt="">
         </div><!--conquista-single-->
 
     </div><!--center-->
@@ -168,7 +185,7 @@
                 <div class="carrousel-single-box">
                     <p> <i class="fas fa-quote-left" ></i> Aqui e o depoimento dos caras que vao por</p></p>
                 </div><!--carrousel-single-box-->
-                <img src="../img/instagram.png" alt="imagem ilustrativa">
+                <img src="./img/DEPOIMENTO-96X106,18PX/img-leo.png" alt="imagem ilustrativa">
                 <p>Instagram insta</p>
                 <span>CEO</span>
             </div><!--carrousel-single-->
@@ -177,7 +194,7 @@
                 <div class="carrousel-single-box">
                     <p>Aqui e o depoimento dos caras que vao por</p>
                 </div><!--carrousel-single-box-->
-                <img src="../img/instagram.png" alt="imagem ilustrativa">
+                <img src="./img/DEPOIMENTO-96X106,18PX/img-leo.png" alt="imagem ilustrativa">
                 <p>Instagram insta</p>
                 <span>CEO</span>
             </div><!--carrousel-single-->
@@ -186,7 +203,7 @@
                 <div class="carrousel-single-box">
                     <p>Aqui e o depoimento dos caras que vao por</p>
                 </div><!--carrousel-single-box-->
-                <img src="../img/instagram.png" alt="imagem ilustrativa">
+                <img src="./img/DEPOIMENTO-96X106,18PX/img-leo.png" alt="imagem ilustrativa">
                 <p>Instagram insta</p>
                 <span>CEO</span>
             </div><!--carrousel-single-->
@@ -198,10 +215,10 @@
   <article class="artigo-carrosel" >
       <section class="carrosel-fotos">
         <div class="container" id="img" >
-            <img src="./img/theboys-carrosel.png" alt="imagem">
-            <img src="./img/theboys1-carrosel.png" alt="imagem">
-            <img src="./img/sonic1-carrosel.png" alt="imagem">
-            <img src="./img/sonic-carrosel.png" alt="imagem">
+            <img src="./img/CARROSEL-600X200PX/theboys-carrosel.png" alt="imagem">
+            <img src="./img/CARROSEL-600X200PX/theboys1-carrosel.png" alt="imagem">
+            <img src="./img/CARROSEL-600X200PX/sonic1-carrosel.png" alt="imagem">
+            <img src="./img/CARROSEL-600X200PX/sonic-carrosel.png" alt="imagem">
         </div><!--container-->
       </section><!--carrosel-fotos-->
   </article><!--artigo-carrosel-->

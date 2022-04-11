@@ -14,7 +14,7 @@
   :root {
     --cor0: #ffffff;
     --cor1: black;
-    --cor2: #434e39d7;
+    --cor2: #474747d7;
     --cor3: #2a4247d2;
     --cor4: #F58634;
     --cor5: rgba(58, 58, 58, 0.808);
@@ -57,12 +57,13 @@ main {
 }
 header {
     background-color: var(--cor0);
+  /* background-image: url('../img/AlfaNerd.png');*/
     padding: 20px 0;
     border-bottom:2px solid black;    
     position: sticky;/*======SE USA PARA MENU SEGUINDO*/
     left: 0;
     top: 0;
-    z-index: 99;
+    z-index: 99;/* se usa para o conteudo ficar embaixo do menu seguindo*/
 }
 
 .logo {
@@ -106,9 +107,9 @@ header {
 /*=========section main=============*/
 
 section.main {
-  /* background-color: var(--cor3);*/
-   background-image: url(../img/AlfaNerd.png);
-   min-height: 800px; se usa pra definir tamanho da area
+   background-color: var(--cor6);
+  /* background-image: url('../img/AlfaNerd.png');*/
+   min-height: 800px; /*e usa pra definir tamanho da area*/
   padding: 70px 0;
    background-position:center;
    background-size: cover;
@@ -124,12 +125,15 @@ section.main {
 
 .main_cta h2 {
     color:var(--cor4);
-    font-size: 40px;
+    font-size: min(2.2em, 4.9vw);/*se usa para dimencionar o tamanho do texto de forma responsiva*/
+    text-shadow: 1px 1px 0px var(--cor6);
 }
 .main_cta p {
     color: var(--cor0);
     font-size: 19px;
     margin:10px 0;
+    font-size: min(1.2em, 3.9vw);
+    text-shadow: 1px 1px 0px var(--cor6);/*se usa para colocar sobra no texto*/
 }
 .main_cta button {
     background-color: var(--cor4);
@@ -141,7 +145,7 @@ section.main {
     border: 0;
     cursor: pointer;
 }
-
+/*===PAGINA PRINCIPAL DIFERENCIAL*/
 .diferenciais {
     display: flex;/*usamos pra colocar uma do lado da outra nas divs*/
     flex-wrap: wrap;
