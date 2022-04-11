@@ -149,6 +149,7 @@ section.main {
 .diferenciais {
     display: flex;/*usamos pra colocar uma do lado da outra nas divs*/
     flex-wrap: wrap;
+    
 }
 .diferencial-single {
     background-color: var(--cor0);
@@ -156,9 +157,8 @@ section.main {
     width: 23%;
     margin-right:  2%;
     padding:50px 20px;
-    border-radius: 6px;
+    border-radius: 6px;    
 }
-
 .diferencial-single i {/*svg font Awesome*/
     color: var(--cor4);
     font-size: 25px;
@@ -468,6 +468,9 @@ footer p {
     }
     .main p{
         font-size:0.9em;
+    }
+    .diferencial-single img {
+        padding-left:15%;
     }
     
 }
