@@ -455,7 +455,7 @@ footer p {
 /*media query se usa para tornar responsivo usando as classes dimencionando o tamanho da tela*/
 @media screen and (max-width: 400px){/*menor que 400px*/
     .menu-itens {
-        top:85px;
+        top:75px;
     }
     section.conquistas h2 {
         font-size: 1em;
@@ -471,9 +471,18 @@ footer p {
     }
     .diferencial-single img {
         padding-left:0%;
-        width:100%;
+        width:50%;
     }
     
+}
+@media screen and (min-width: 768px){
+    .diferencial-single img {
+        padding-left:0%;
+        width:90%;
+    }
+    .diferencial-single {
+        text-align: center;
+    }
 }
 @media screen and (max-width: 768px) {/*menor que 768px*/
     .diferencial-single{
@@ -530,6 +539,6 @@ footer p {
     }
     .diferencial-single img {
         padding-left:0%;
-        width:50%;
+        width:100%;
     }
 }
