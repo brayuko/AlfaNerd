@@ -52,58 +52,6 @@ main {
 
 }
 
-.menu-mobile {
-    display:none;
-}
-header {
-    background-color: var(--cor0);
-  /* background-image: url('../img/AlfaNerd.png');*/
-    padding: 20px 0;
-    border-bottom:2px solid black;    
-    position: sticky;/*======SE USA PARA MENU SEGUINDO*/
-    left: 0;
-    top: 0;
-    z-index: 99;/* se usa para o conteudo ficar embaixo do menu seguindo*/
-}
-
-.logo {
-    color: var(--cor4);
-}
-.logo h2{
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.menu{/*==============menu==========*/
-    text-align: right;
-    width: 80%;
-}
-.menu a {
-    color: var(--cor1);
-    font-size: 14px;
-    text-decoration: none;
-    margin-right: 20px;
-}
-.menu a:hover {
-    color: var(--cor4);
-    text-decoration: underline;
-    
-}
-.menu .btn-menu:hover {
-    color: var(--cor4);
-    font-weight: bolder;
-    background-color: var(--cor3);
-}
-.menu .btn-menu {
-    background-color: var(--cor4);
-    color: var(--cor0);
-    display: inline-block;
-    padding: 4px 10px;
-    border-radius: 6px;
-    font-weight: bolder;
-    transition-duration: 0.5s;
-}
-
 /*=========section main=============*/
 
 section.main {
@@ -293,42 +241,7 @@ display: flex;
     margin-bottom:14px;
 }
 
-.menu-itens {/*menu mobile hamburguin*/
-    position: absolute;
-    left:0px;
-    top:72px;
-    width:100%;
-    text-align: center;
-    padding-right: 2px;
-    background-color: var(--cor4);
-    /*border-bottom:2px solid black;*/
-    display: block;
-    opacity: 0;
-    transition: 1s;
-}
-.menu-itens.show {
-    opacity:1;
-    
-}
-.menu-itens.hide {
-    opacity:0;
-    
-}
-.menu-itens a {
-    display: block;
-    text-decoration: none;
-    color: var(--cor0);
-    font-weight:bold;
-    margin-bottom:10px;
-    margin-top:10px;
-}
-.menu-itens a:hover {
-   /* text-decoration: underline;*/
-   color: var(--cor6);
-    margin: 0px;
-    margin-bottom:10px;
-    margin-top:10px;
-}
+
 /*=========CARROSEL DE DEPOIMENTOS=================*/
     section.depoimentos {
     padding: 40px 0;
@@ -386,40 +299,7 @@ display: flex;
     font-size:16px;
     padding: 0 8px;/*==============FIM CARROSEL DEPOIMENTOS===========*/
 }
-/*====================CARROSEL DE FOTOS================*/
-article.artigo-carrosel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;/*
-    min-height: 100vh;*/
-    box-sizing: border-box;
-    background-color: var(--cor0);
-    height:200px;
-    width: 600px;
-    background-size: cover;
-    margin-bottom: 10px;
-}
 
-.carrosel-fotos {
-    box-shadow: 2px 2px 4px black;
-    overflow: hidden;
-    height:200px;
-    width: 600px;
-    display:inline-flex
-    
-}
-
-.container {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    transition: translateX(0);
-}
-.container img {
-    object-fit: cover;
-    height: 200px;
-    width: 600px;
-}/*=====================FIM DO CARROSEL=========*/
 
 footer {/*configuraçao rodape*/
     background-color: var(--cor6);
@@ -454,10 +334,7 @@ footer p {
 }
 /*media query se usa para tornar responsivo usando as classes dimencionando o tamanho da tela*/
 @media screen and (max-width: 400px){/*menor que 400px*/
-    .menu-itens {
-        top:75px;
-    }
-    section.conquistas h2 {
+   section.conquistas h2 {
         font-size: 1em;
     }
     .logo h2 {
@@ -489,27 +366,11 @@ footer p {
         width:100%;
         margin-bottom:10px;
     }
-    .logo {
-        width:25%;
-    }
-    .menu {
-        display: none;
-    }
-    .menu-mobile {
-        width:75%;
-        text-align: right;
-        display:block;
-    }
     .conteudo-sobre p {
         width:100%;
         margin-bottom:20px;
     }
-    .menu-mobile i {
-        cursor: pointer;
-        font-size:23px;
-        margin-top:8px;
-    }
-   .outra-secao-conteudo-img {
+    .outra-secao-conteudo-img {
         width: 100%;/*tamanho dimencionado responsivo na imagem deve ser colocado junto com metodo responsivo de 100%*/
     }
     .outra-secao-conteudo {

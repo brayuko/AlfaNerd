@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*====================CARROSEL DE FOTOS================*/
+article.artigo-carrosel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;/*
+    min-height: 100vh;*/
+    box-sizing: border-box;
+    background-color: var(--cor0);
+    height:200px;
+    width: 600px;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.carrosel-fotos {
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height:200px;
+    width: 600px;
+    display:inline-flex
+    
+}
+
+.container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transition: translateX(0);
+}
+.container img {
+    object-fit: cover;
+    height: 200px;
+    width: 600px;
+}/*=====================FIM DO CARROSEL=========*/
+
+@media screen and (max-width: 768px) {/*menor que 768px*/
+    article.artigo-carrosel {/*carrosel de fotos some ao diminuir tela*/
+        display: none;
+    }
+  
+}

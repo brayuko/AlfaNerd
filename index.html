@@ -11,35 +11,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2? família= Poppins:wght@100;300;600 & display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/estilo-padrao.css">
     <link rel="stylesheet" href="css/grid-mosaico.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="./css/carrosel.css">
 
 </head>
 <body>
 
-    <header>
-        <div class="center">
-                <div class="logo">
-                    <h2>Alfa Nerd</h2>
-                </div><!--logo-->
-                <div class="menu">
-                    <a href="#">Inicio</a>
-                    <a href="artigos.html">Artigos</a>
-                    <a href="#">Sobre Nos</a>
-                    <a href="#">Contato</a>
-                    <a class="btn-menu" href="#">Click Aqui</a>
-                </div><!--menu-->
-                <div class="menu-mobile">
-                    <i class="fas fa-bars menu-mobile-icon" ></i>
-                    <div class="menu-itens">
-                        <a href="#">inicio</a>
-                        <a href="artigos.html">Artigos</a>
-                        <a href="#">Sobre Nos</a>
-                        <a href="#">contato</a>
-                    </div><!--menu-itens-->
-                </div><!--menu-mobile-->
-        </div><!--center-->
-    </header>
+    <header><!--menu-->
+        <a id="logo" href="#">Alfa Nerd<img src="img/IMAGEM-MOSAICO1-350X400PX.png" width="45px" alt=""></a>
+        <nav id="nav" ><!--navegaçao com assebilidade comando em js-->
+            <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false" >Menu <span id="hamburger" ></span> </button>
+            <ul id="menu" role="menu" ><!--menu em ul-->
+                <li><a href="#">inicio</a></li><!--link-->
+                <li><a href="#">Sobre Nos</a></li><!--link-->
+                <li><a href="#">Artigos</a></li><!--link-->
+                <li><a href="#">Contatos</a></li><!--link-->
+            </ul><!--ul-menu-fim-->
+        </nav><!--nav-pai-->
+    </header><!--fim de menu-->
 
     
   <section class="main">
@@ -234,6 +225,7 @@
     <!--<div style="height:9000px;" ></div>  para testar o scrolbar efeito paralax-->
     <script src="https://kit.fontawesome.com/3d393691eb.js" crossorigin="anonymous"></script>
 
-    <script src="./js/script.js" >  </script>
+    <script src="./js/carrosel.js" >  </script>
+    <script src="./js/menu.js" >  </script>
 </body>
 </html>
