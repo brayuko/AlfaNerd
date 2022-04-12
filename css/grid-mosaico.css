@@ -55,7 +55,7 @@
 @media (max-width: 600px){
     .mosaico-grid{
     grid-template-columns: 1fr; 
-    max-width: 300px;
+    max-width: 450px;
     justify-content: center;
     }
     #child1 {        
@@ -67,7 +67,7 @@
     }
     .child {
         display: grid;
-        max-width: 580px;
+        max-width: 450px;
         justify-content: center;
        width: 100%;
     }
