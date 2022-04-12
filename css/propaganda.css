@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.propaganda-topo {
+    background-color: var(--cor0);
+    margin:0 auto;
+    border-top: 1px solid ;
+   
+}
+.propaganda-topo1 {
+    background-color: var(--cor7);
+    padding-top:10px;
+    border: 2px solid;
+    width: 25%;
+    height:100px;
+    margin:0 auto;
+}
+.propaganda-topo2 {
+    background-color: var(--cor4);
+    text-align: center;
+    border: 2px solid;
+    width: 25%;
+    margin:0 auto;
+
+}

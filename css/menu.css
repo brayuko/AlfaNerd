@@ -32,7 +32,7 @@ header {
     position:sticky;/*======SE USA PARA MENU SEGUINDO*/
     left: 0;
     top: 0;
-    z-index: 99;/* se usa para o conteudo ficar embaixo do menu seguindo*/
+    z-index: 999;/* se usa para o conteudo ficar embaixo do menu seguindo*/
 }
 
 #menu {/*classe da ul*/
