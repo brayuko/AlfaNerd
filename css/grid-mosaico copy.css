@@ -67,9 +67,8 @@
     }
     .child {
         display: grid;
-        max-width: 580px;
+        max-width: 380px;
         justify-content: center;
-       width: 100%;
     }
     .child p {
         text-align: center;

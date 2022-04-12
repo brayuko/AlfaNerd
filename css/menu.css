@@ -11,6 +11,8 @@ a {/*link do menu*/
 }
 a:hover {
     background-color: rgba(0, 0, 0, .10);    
+    color: var(--cor4);
+    font-weight: bold;
 }
 #logo {/*link da logo*/
     font-size: 1.5em;
@@ -27,6 +29,10 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: var(--cor0);
+    position:sticky;/*======SE USA PARA MENU SEGUINDO*/
+    left: 0;
+    top: 0;
+    z-index: 99;/* se usa para o conteudo ficar embaixo do menu seguindo*/
 }
 
 #menu {/*classe da ul*/
