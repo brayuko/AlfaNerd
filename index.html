@@ -16,12 +16,13 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="./css/carrosel.css">
     <link rel="stylesheet" href="./css/propaganda.css">
+    <link rel="stylesheet" href="./css/slide.css">
 
 </head>
 <body>
 
     <header><!--menu-->
-        <a id="logo" href="#">Alfa Nerd<img src="img/IMAGEM-MOSAICO1-350X400PX.png" width="45px" alt=""></a>
+        <a id="logo" href="index.html">Alfa Nerd<img src="img/IMAGEM-MOSAICO1-350X400PX.png" width="45px" alt=""></a>
         <nav id="nav" ><!--navegaçao com assebilidade comando em js-->
             <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false" >Menu <span id="hamburger" ></span> </button>
             <ul id="menu" role="menu" ><!--menu em ul-->
@@ -33,6 +34,53 @@
         </nav><!--nav-pai-->
     </header><!--fim de menu-->
 
+    <div class="corpo-slide" >
+        <div class="slider">
+            <div class="slides">
+                <!--RADIO BUTTONS-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <!--FIM RADIO BUTTONS-->
+                <!--SLIDE IMAGES-->
+                    <div class="slide first">
+                        <img src="./img/FOTO-CARROSEL.png" alt="">
+                    </div><!--fim slide first-->
+                    <div class="slide">
+                        <img src="./img/FOTO-CARROSEL2.png" alt="">
+                    </div><!--fim slide first-->
+                    <div class="slide">
+                        <img src="./img/FOTO-CARROSEL3.png" alt="">
+                    </div><!--fim slide first-->
+                    <div class="slide">
+                        <img src="./img/FOTO-CARROSEL4.png" alt="">
+                    </div><!--fim slide first-->
+                    <div class="slide">
+                        <img src="./img/FOTO-CARROSEL5.png" alt="">
+                    </div><!--fim slide first-->
+                 <!--FIM SLIDE IMAGES-->
+                 <!--NAVIGATION AUTO-->
+                 <div class="navigation-auto">
+                     <div class="auto-btn1"></div><!--fim auto-btn1-->
+                     <div class="auto-btn2"></div><!--fim auto-btn1-->
+                     <div class="auto-btn3"></div><!--fim auto-btn1-->
+                     <div class="auto-btn4"></div><!--fim auto-btn1-->
+                     <div class="auto-btn5"></div><!--fim auto-btn1-->
+                 </div><!--FIM NAVIGATION AUTO-->
+                 <!--FIM NAVIGATION AUTO-->
+            </div><!--slides-->
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn" ></label>
+                <label for="radio2" class="manual-btn" ></label>
+                <label for="radio3" class="manual-btn" ></label>
+                <label for="radio4" class="manual-btn" ></label>
+                <label for="radio5" class="manual-btn" ></label>
+            </div><!--fim manual-navigation-->
+        </div><!--slider-->
+    </div><!--=========CORPO SLIDE==========-->
+
     <section class="main">    
     <div class="center">            
         <div class="main_cta">
@@ -40,21 +88,7 @@
             <p> Seja Bem-Vindo Ao Alfa Nerd</p>
             <button>Click Aqui</button>
         </div><!--main_cta-->
-        <!--======INICIO GALERIA=====-->
-    
-        <div class="mosaico-grid">
-            <div class="child" id="child1" >
-                <img src="./img/IMAGEM-MOSAICO-350X400PX/BILLY-BRUTO-350X400PX.png" id="foto1" alt=""> <p>Legenda</p>
-            </div><!--Child Div Filho-->
-            <div class="child" id="child1" >
-                <img src="./img/IMAGEM-MOSAICO-450X200PX/IMAGEM-MOSAICO2-450X200PX.png" id="foto1" alt=""><p>Legenda</p></div><!--Child Div Filho-->
-            <div class="child" id="child1" >
-                <img src="./img/IMAGEM-MOSAICO-450X200PX/IMAGEM-MOSAICO3-450X200PX.png" id="foto1" alt=""><p>Legenda</p>
-            </div><!--Child Div Filho-->
         
-        </div><!--mosaico-grid Div Pai-->
-    
-<!--======================FIM DA GALERIA-->
 
         <div class="diferenciais">
             <div class="diferencial-single">
@@ -142,6 +176,7 @@
         </div><!--outra-secao-conteudo-->
     </div><!--center-->
   </section><!--outra-secao-->
+  
 
   <section class="imagens-lado-a-lado"><!-- seçao com imagens lado a lado-->
     <div class="center">
@@ -163,6 +198,34 @@
 
     </div><!--center-->
   </section><!--imagens-lado-a-lado-->
+  
+              <!--NOVA ENTRADA DE SEÇAO-->
+              <section class="propaganda">
+                <div class="center-propaganda">
+
+                    <div class="propaganda1">
+                        <P>ESPAÇO PROPAGANDA</P>
+                        <P>ESPAÇO PROPAGANDA</P>
+                    </div><!--propaganda1-->
+
+                    <div class="propaganda1">
+                        <P>ESPAÇO PROPAGANDA</P>
+                        <P>ESPAÇO PROPAGANDA</P>
+                    </div><!--propaganda1-->
+
+                    <div class="propaganda2">            
+                        <P>ESPAÇO PROPAGANDA</P>
+                        <P>ESPAÇO PROPAGANDA</P>                  
+                    </div><!--propaganda2-->
+
+                    <div class="propaganda2">            
+                        <P>ESPAÇO PROPAGANDA</P>
+                        <P>ESPAÇO PROPAGANDA</P>                  
+                    </div><!--propaganda2-->
+
+                </div><!--center propaganda-->
+              </section><!--propaganda-->
+            <!--FIM DE ENTRADA DE SEÇAO-->
 
   <section class="depoimentos">
     <div class="center">
@@ -180,8 +243,7 @@
                 <img src="./img/DEPOIMENTO-96X106,18PX/img-leo.png" alt="imagem ilustrativa">
                 <p>Instagram insta</p>
                 <span>CEO</span>
-            </div><!--carrousel-single-->
-
+            </div><!--carrousel-single-->        
             <div class="carrousel-single">
                 <div class="carrousel-single-box">
                     <p>Aqui e o depoimento dos caras que vao por</p>
@@ -226,5 +288,6 @@
 
     <script src="./js/carrosel.js" >  </script>
     <script src="./js/menu.js" >  </script>
+    <script src="./js/slide.js" >  </script>
 </body>
 </html>

@@ -37,7 +37,7 @@ body {
     background-color: var(--cor6);
 }
 main {
-   max-width: 90%;
+   max-width: 100%;
     background-color:var(--cor0);
     margin: 0 auto;
    
@@ -57,8 +57,8 @@ main {
 section.main {
    background-color: var(--cor6);
   /* background-image: url('../img/AlfaNerd.png');*/
-   min-height: 800px; /*e usa pra definir tamanho da area*/
-  padding: 70px 0;
+   min-height: 900px; /*e usa pra definir tamanho da area*/
+  padding: 40px 0;
    background-position:center;
    background-size: cover;
    background-repeat: no-repeat;
@@ -66,8 +66,9 @@ section.main {
 }
 
 .main_cta {
-    width:100%;
-    margin:60px;
+    width:1000px;
+    height:20vh;
+    padding-bottom:55px;
     text-align: center;
 }
 
@@ -97,15 +98,14 @@ section.main {
 .diferenciais {
     display: flex;/*usamos pra colocar uma do lado da outra nas divs*/
     flex-wrap: wrap;
-    
 }
 .diferencial-single {
     background-color: var(--cor0);
     /*width: calc(100% / 4);  se usa pra calcular a divisao da div */
-    width: 23%;
-    margin-right:  2%;
+    width: 24.5%;
+    margin-right:  0.5%;
     padding:50px 20px;
-    border-radius: 6px;    
+    border-radius: 6px;
 }
 .diferencial-single i {/*svg font Awesome*/
     color: var(--cor4);
@@ -331,6 +331,33 @@ footer p {
     text-align: right;
     padding-right: 10px;
     padding-top: 15px;
+}
+/*======PROPAGANDA FINAL DA PAGINA=============*/
+.propaganda {
+    width: 100%;
+    background-color:var(--cor0);
+    margin-top:10px;
+    
+}
+.center-propaganda {
+    display:flex;
+    flex-wrap: wrap;
+    width:90%;
+    height:20vh;
+/*background-color: var(--cor1);*/
+justify-content:space-between;
+}
+.propaganda1 {
+    background-color: var(--cor4);
+    width:15%;
+    BORDER: 2PX SOLID white;
+    justify-content: center;
+    align-items: center;
+}
+.propaganda2 {
+    background-color: var(--cor7);
+    width:15%;
+    BORDER: 2PX SOLID white;
 }
 /*media query se usa para tornar responsivo usando as classes dimencionando o tamanho da tela*/
 @media screen and (max-width: 400px){/*menor que 400px*/

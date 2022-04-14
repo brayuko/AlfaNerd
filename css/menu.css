@@ -33,6 +33,7 @@ header {
     left: 0;
     top: 0;
     z-index: 999;/* se usa para o conteudo ficar embaixo do menu seguindo*/
+    border-bottom:2px solid rgba(0, 0, 0, 0.363);
 }
 
 #menu {/*classe da ul*/

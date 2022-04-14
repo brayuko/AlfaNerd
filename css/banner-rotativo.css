@@ -1,0 +1,34 @@
+.banner {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    background:rgb(4, 21, 36);
+    max-width: 900px;
+    max-height: 450px;
+    margin:0 auto;
+}
+
+#slider {
+    width: 100%;
+    max-width: 900px;
+    height: 25vw;
+    max-height: 450px;
+    position: relative;
+}
+
+#slider img{
+    opacity: 0;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: opacity 800ms;
+}
+#slider img.selected { 
+    opacity: 1;
+}
