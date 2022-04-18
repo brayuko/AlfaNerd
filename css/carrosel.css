@@ -13,6 +13,7 @@ article.artigo-carrosel {
     width: 600px;
     background-size: cover;
     margin-bottom: 10px;
+    margin-top:10px;
 }
 
 .carrosel-fotos {
@@ -37,7 +38,16 @@ article.artigo-carrosel {
 
 @media screen and (max-width: 768px) {/*menor que 768px*/
     article.artigo-carrosel {/*carrosel de fotos some ao diminuir tela*/
-        display: none;
+        
+        width: 100%;
+        
+    }
+    .container img {
+        height: 100%;
+        
+    }
+    .carrosel-fotos {
+        height:100%;
     }
   
 }

@@ -1,0 +1,120 @@
+@charset "UTF-8";
+*{
+    padding:0;
+    margin:0;
+}
+main{
+    width:1200px;
+    background-color: var(--cor0);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 auto;
+    justify-content:center;
+    
+}
+.artigos1{
+    width:1200px;
+    background-color: var(--cor0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.artigos1 div {
+    width:260px;
+    height:210px;
+    border-radius: 10px;
+   /*background-image: url('../img/FOTOS-PEQUENAS-270X215PX/kof-270X215PX.png');*/
+}
+.artigos1 > div img {
+    max-width:100%;
+    display: block;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.artigos1:hover {
+    transition: all 1s;
+}
+.artigos2 {
+    width:1200px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--cor0);
+    justify-content:center;
+    align-items:center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.artigos2 div {
+    width:260px;
+    height:210px;
+    border-radius: 10px;
+}
+.artigos2 > div img {
+    max-width:100%;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.propaganda {
+    width:100%;
+    height:100%;
+    background-color: var(--cor0);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.propaganda div{
+    width: 60%;
+    height: 100%;
+    display: block;
+}
+#pg1 {
+    width: 250px;
+    height: 250px;
+    margin-left:10px;
+    display: block;
+}
+#pg2 {
+    width:70%;
+    height: 100%;
+}
+#pg3 {
+    width:100%;
+    height: 100%;
+    background-size: cover;
+    display: block;
+}
+.video iframe{
+    width:45vw;
+    height: 40vh;
+    margin:0 auto;
+    display: block;
+}
+
+
+
+@media (max-width: 768px) {
+    .propaganda{
+        width:100%;
+        height: 100%;  
+        justify-content: center;
+    }
+    .propaganda div {
+        width: 100%;
+        height: 100%;
+
+    }
+    .video iframe{
+        width:100%;
+        height: 100%;
+    }
+    #pg2 {
+        width: 100%;
+        height: 45vh;
+    }
+}

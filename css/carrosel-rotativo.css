@@ -1,0 +1,34 @@
+.carrosel-rotativo {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    background:rgb(4, 21, 36);
+    max-width: 1200px;
+    max-height: 150px;
+    margin:0 auto;
+}
+
+#slider-2 {
+    width: 100%;
+    max-width: 1200px;
+    height: 25vw;
+    max-height: 150px;
+    position: relative;
+}
+
+#slider-2 img{
+    opacity: 0;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: opacity 800ms;
+}
+#slider-2 img.selected1 { 
+    opacity: 1;
+}
