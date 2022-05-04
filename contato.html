@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfa Nerd</title>
+
+    <link rel="shortcut icon" href="./img/AN.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? família= Poppins:wght@100;300;600 & display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" />
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        .formulario, .mensagem-alerta{
+            text-align: center; 
+            background-color: var(--cor0);
+            margin: 0;
+            padding: 0;
+        }
+        form{
+            max-width: 800px;
+            padding-top: 30px;
+            display: block;
+            margin: 0 auto;
+        }
+        .mensagem-alerta{
+            max-width: 500px;
+            margin: 20px auto;
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+    <header class="rede-social">
+
+         <!--rede social-->
+         <section class="imagens-lado-a-lado"><!-- seçao com imagens lado a lado-->
+            <!--<div class="center">-->
+                <div class="imagens-single">
+                   <img src="./img/REDES-SOCIAIS/facebook.png" width="35px"  alt="facebook"><!--usei width="35px" pra dimencionar a imagem forçando um tamanho menor, o ideal e dimencionar ela no tamanho certo via editor de fotos-->
+                </div><!--conquista-single-->
+        
+                <div class="imagens-single">
+                    <img src="./img/REDES-SOCIAIS/instagram.png" width="35px"  alt="instagram">
+                </div><!--conquista-single-->
+        
+                <div class="imagens-single">
+                    <img src="./img/REDES-SOCIAIS/youtube.png" width="35px"  alt="youtube">
+                </div><!--conquista-single-->     
+                <!--</div>!--center-->
+          </section><!--imagens-lado-a-lado-->
+          <!--redes sociais-->
+
+    </header><!--REDES SOCIAIS-->
+
+    <header><!--====CABEÇALHO MENU-->
+        <a class="a-logo" href="index.html"><img class="img-logo" src="./img/AN.png" width="35px" alt=""></a>
+        <a id="logo" href="index.html">Alfa <img src="./img/AN.png" width="35px" alt="">erd</a>
+
+       <nav id="nav" ><!--navegaçao com assebilidade comando em js-->
+            <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false" >Menu <span id="hamburger" ></span> </button>
+            <ul id="menu" role="menu" ><!--menu em ul-->
+                <li><a href="index.html">inicio</a></li><!--link-->
+                <li><a href="sobrenos.html">Sobre Nos</a></li><!--link-->
+                <li><a href="artigos.html">Artigos</a></li><!--link-->
+                <li><a href="contato.html">Contatos</a></li><!--link-->
+            </ul><!--ul-menu-fim-->
+            
+        </nav><!--nav-pai-->
+    </header><!--====FIM DE MENU CABEÇALHO-->
+
+    <main class="formulario">
+        <h1>Formulário de Contato</h1>
+        <p>Acrescente um email válido para receber o email teste!</p>
+        <br>
+        <form class="form-horizontal" action="index.php#formulario" method="post" role="form" data-toggle="validator">
+            <div class="form-group">
+                <label class="control-label col-sm-3">Nome*:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" name="nome" id="nome" value="" placeholder="seu nome" required >
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-3">Email*:</label>
+                <div class="col-sm-9">
+                    <input type="email" class="form-control" name="email" id="email" value="" placeholder="exemplo@dominio.com" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-3">Telefone*:</label>
+                <div class="col-sm-9">
+                    <input type="number" class="form-control" name="telefone" id="telefone" placeholder="(00) 00000-0000" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <!--
+            <div class="form-group">
+                <label class="control-label col-sm-3">Assunto*:</label>
+                <div class="col-sm-9">
+                    <select class="form-control" name="assunto" required>
+                        <option value="" selected="selected" disabled="disabled"> -- Escolha uma opção --</option>
+                        <option value="contato">Contato</option>
+                        <option value="vendas">Vendas</option>
+                        <option value="financeiro">Financerio</option>
+                        <option value="informacoes">Informações</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>-->
+            <div class="form-group">
+                <label class="control-label col-sm-3">Mensagem*:</label>
+                <div class="col-sm-9">
+                    <textarea class="form-control" id="exampleTextarea" rows="6" 
+                              id="mensagem" name="mensagem" placeholder="sua mensagem" required></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-12 text-right">
+                    <input class = "btn btn-primary" id="submit" name="btnSend" type="submit" value="ENVIAR">
+                    <a name="formulario"></a>
+                    <div class="mensagem-alerta"><?php echo $msg ?></div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+
+    <footer>
+        <h1>Alfa Nerd</h1>
+        <p>Site de pesquisa e noticia em geral</p>
+        <p id="link-rodape" >Todos os direitos reservados by <a href="">Alfa Nerd</a></p>
+    </footer>
+    <!--<div style="height:9000px;" ></div>  para testar o scrolbar efeito paralax-->
+    <script src="https://kit.fontawesome.com/3d393691eb.js" crossorigin="anonymous"></script>
+
+    <script src="./js/carrosel.js" >  </script>
+    <script src="./js/menu.js" >  </script>
+    <script src="./js/slide.js" >  </script>
+        <!--ESCRIPT FORMULARIO-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script><!--FIM DE ESCRIPT DE FORMULARIO-->
+</body>
+</html>
