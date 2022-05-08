@@ -19,7 +19,7 @@
     --cor4: #F58634;
     --cor5: rgba(58, 58, 58, 0.808);
     --cor6:#2E4144;
-    --cor7:#0078FF;
+    --cor7:rgba(151, 151, 151, 0.425);
     --cor8:#ffffff00;
       
     --fonte-texto: 'Arial' verdana helvetica;
@@ -39,8 +39,8 @@ body {
     
 }
 main {
-   max-width: 100%;/*
-    background-color:var(--cor0);*/
+   max-width: 100%;
+    background-color:var(--cor6);
     margin: 0 auto;   
 }
 h1, h2 {
@@ -63,7 +63,7 @@ p {
     font-size:  min(1.5em, 3.9vw);
    /* text-shadow: 1px 1px 0px var(--cor6);/*sombra no texto*/
 }
-/*===CABEÇALHO HEADER MENU*/
+/*======================CABEÇALHO HEADER MENU=====================*/
 
  header a {/*link do menu*/
     color:black;
@@ -124,7 +124,7 @@ header a:hover {
     }
 }
 
-/*======redes sociais======*/
+/*=============================redes sociais=========================*/
 section.imagens-lado-a-lado {/* seçao de conquistas colocando imagens*/
     background-color: var(--cor0);    
     padding:2px 0;
@@ -188,7 +188,7 @@ section.imagens-lado-a-lado {/* seçao de conquistas colocando imagens*/
         text-align: center;
     }
 }
-/*=====fim de redes sociais====*/
+/*=========================fim de redes sociais===============*/
 .rede-social {
     width: 19%;
     background-color:var(--cor0);
@@ -303,8 +303,89 @@ span {
 
 /*=====FIM CABEÇALHO MENU*/
 
-/*====VIDEO RESPONSIVO*/
-/*tipo de posicionamento guanabara*/
+/*==============================VIDEO RESPONSIVO====================*/
+
+.video-embed {
+    position:relative;
+    width:100%;
+    padding-bottom:56.25%;/*proporçao de 75% fica 4 por 3 e 56.25% pra tela maior*/
+}
+.video-embed iframe{
+    position:absolute;
+    width:100%;
+    max-width: 560px;
+    max-height:315px;
+    height:100%;    
+    border:none;
+}
+.video-col {
+    place-self:center;
+    width:50vw;
+    margin:1px;
+    padding:5px;
+    /*border-radius:1rem;*/
+   /* box-shadow:0px 4px 0px lightgray;*/
+    background-color:rgb(226, 109, 14);
+    max-width: 560px;
+    max-height:318px;
+}
+.container-video {
+    display: grid;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0);
+    margin:0 auto;
+    max-width: 562px;
+    max-height:320px;
+}
+@media screen and (max-width: 768px) {
+    .video-col {
+        width:100%;        
+    }
+    .container-video {
+        width:100%;   
+    }
+    .texto-video {
+        width:100%;
+    }
+    .secao-video {
+        width:100%;
+        /*flex-wrap: wrap;*/
+    }
+    .emcapsulamento {
+        width:100%;
+        }  
+}
+
+.secao-video {
+    width:100%;
+    max-width: 1000px;/*mudar para 900px ou melhor proporçao de tela ou 100% pra usar o display flex*/
+    background-color:rgb(241, 3, 202);
+    margin:0 auto;
+    /*display: flex;*/
+    
+}
+.emcapsulamento {
+    width:100%;
+    background-color:var(--cor0);
+    margin:0 auto;
+/*flex-wrap: wrap;*/
+}
+.video-comtexto {
+    text-align: center;
+}
+.texto-video {
+    width:100%;
+    max-width: 450px;
+    padding-top:15px;
+    padding:5px;
+    margin:0 auto;
+    
+}
+.texto-video p {
+    text-align:justify;
+}
+
+/*========================tipo de posicionamento guanabara=============*/
 div.video {
   background-color: var(--cor8);
   margin: 0px -20px 30px -20px;
@@ -425,7 +506,7 @@ div.video > iframe {
         margin:0 auto;
       }
     
-}/*video 2
+}/*=================video 2========================*//*
 .video {
     width: 56%;
     max-width: 560px;
@@ -527,7 +608,7 @@ section .video {
     margin:0 auto;
 }
 }*/
-/*=====FIM DE VIDEO RESPONSIVO=====*/
+/*=============================FIM DE VIDEO RESPONSIVO====================*/
 /*=====imagem responsiva*/
 img {
     width: 100%;
@@ -779,16 +860,17 @@ article.artigo-carrosel {
     }  
 }
 /*========FIM DE CARROSEL SIMPLES=========*/
-/*============================================GALERIA DE FOTOS EM ARTIGOS*/
+/*================================GALERIA DE FOTOS EM ARTIGOS==============*/
 .clear {
     clear:both;
 }
 /* aplicando o display inline*/
 .galeria{
+    width:100%;
     padding:2% 20px;   
     text-align: center;    
     cursor:pointer;
-    background-color: #fff;/*cor da opacidade*/
+    background-color: var(--cor0);/*cor da opacidade*/
   transition: 0.3s;/*amimaçao de transiçao opacidade*/
 }
 .galeria div:hover {
@@ -800,9 +882,9 @@ article.artigo-carrosel {
     height:300px;
     max-width: 300px;
     margin-right: -4px;
-    background-color: rgb(58, 68, 43);
+    background-color: var(--cor4);
     display: inline-block;
-    border: 1px solid white;
+    border: 1px solid var(--cor0);
     border-radius:8px;
    /* background-repeat: no-repeat;*/
     background-position: center;
@@ -842,10 +924,10 @@ article.artigo-carrosel {
         margin-bottom:-2px;
     }
 }
-/*========FIM DE GALERIA DE FOTOS EM ARTIGOS========*/
+/*=========================FIM DE GALERIA DE FOTOS EM ARTIGOS========*/
 
 /*=============================================CONTEUDO DO SITE===================*/
-section {
+section {/*==================INICIO SECTION=======*/
     width: 100%;
     
 }
@@ -868,27 +950,27 @@ section {
     text-shadow: 1px 1px 0px var(--cor1);
 }
 
-/*FIM DE SECTION*/
+/*=================================FIM DE SECTION*/
 
-/*INICIO ARTICLE*/
+/*=================================INICIO ARTICLE POST  INDIVIDUAL=========*/
 article {
     width:100%;    
 
 }
 .titulo-artigo{
-    padding:50px
+    padding:0px
 }
 .artigo-container {
    /* border: 2px solid;*/
 }
 .bloco {
-    width:90%;
+    width:100%;
     background-color: var(--cor0);
     max-width: 1000px;
     margin:0 auto;
     text-align: center;
-    border: 1px solid;
-    border-radius:10px;
+   /*background border: 1px solid;
+    border-radius:10px;*/
 }
 .bloco span {
     position: relative;
@@ -902,18 +984,73 @@ article {
 }
 .bloco img {
     width:100%;
-    height: 35vw;
+    height:100%;
     background-size: cover;
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
+    border: 1px solid var(--cor0);
+    /*border-top-left-radius:10px;
+    border-top-right-radius:10px;*/
 }
 .bloco p{
-    text-align: justify;
+    text-align:justify;
+    margin:0 auto;
+    width:90%;
+    max-width:560px;
+    background-color:var(--cor7);
 }
 
-/*FIM DE ARTICLE*/
+/*=================================INICIO ARTICLE POST  INDIVIDUAL===========*/
+/*========================SEÇAO DE DESTAQUES================*/
+.destaques {
+width:100%;
+background-color: var(--cor0);
 
-/*SEÇAO DIVIDIDA EM DUAS COLUNAS*/
+}
+.destaque-container {
+display:flex;
+width:100%;
+max-width:1000px;
+margin:0 auto;
+}
+.destaqueh1 {
+width: 35%;
+max-width:250px;
+border:1px solid black;
+align-items: center;
+padding-top:80px;
+}
+.destaque-conteudo {
+width: 100%;
+max-width:250px;
+padding:5px;
+}
+.destaque-conteudo img {
+
+}
+#destaque-span {
+    max-width:1px;
+    
+}
+@media screen and (max-width: 400px){
+    .destaque-container {
+        width: 100%;
+        flex-wrap: wrap;
+        }
+        .destaqueh1 {
+            width:100%;
+        }
+        .destaque-conteudo {
+            width:100%;
+            max-width:100%;
+        }
+}
+@media screen and (min-width: 768px){    
+        .destaque-conteudo {
+            width:100%;
+            max-width:300px;
+        }
+}
+
+/*====================FIM DE SEÇAO DE DESTAQUES==============*/
 
 .secao-dividida {
 width: 100%;
