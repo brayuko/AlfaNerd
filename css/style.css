@@ -928,7 +928,7 @@ section, .section-galeria {
     padding:10px;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
     .container-galeria  {
         display:flex;
         flex-wrap: wrap;
@@ -1203,7 +1203,7 @@ padding:5px;
     padding:10px;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
     .container-grid  {
         display:flex;
         flex-wrap: wrap;
